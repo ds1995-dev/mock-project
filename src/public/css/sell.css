@@ -1,0 +1,178 @@
+.sell {
+    padding: 30px 0 80px;
+}
+
+.sell__inner {
+    width: 680px;
+    margin: 0 auto;
+}
+
+.sell__title {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 0 30px;
+    font-weight: 700;
+}
+
+.sell-section {
+    margin-bottom: 28px;
+}
+
+.sell-section__title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.sell-section__title--line {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.sell-image {
+    margin-bottom: 10px;
+}
+
+.sell-image__box {
+    border: 1px dashed #c9c9c9;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sell-image__button {
+    border: 1px solid #ff5555;
+    color: #ff5555;
+    padding: 6px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sell-image__button input {
+    display: none;
+}
+
+.sell-image__preview {
+    position: absolute;
+    inset: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    object-fit: contain;
+    display: none;
+}
+
+.sell-image__preview.is-visible {
+    display: block;
+}
+
+.sell-field {
+    margin: 16px 0;
+}
+
+.sell-field__label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.sell-field__input,
+.sell-field__textarea,
+.sell-field__select select {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 13px;
+    background: #fff;
+}
+
+.sell-field__textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.sell-field__select {
+    position: relative;
+}
+
+.sell-field__select select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #666 50%),
+        linear-gradient(135deg, #666 50%, transparent 50%);
+    background-position: calc(100% - 14px) calc(50% - 2px),
+        calc(100% - 9px) calc(50% - 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+}
+
+.sell-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sell-category__label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.sell-category__input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sell-category__text {
+    padding: 4px 10px;
+    border-radius: 14px;
+    border: 1px solid #ff5555;
+    color: #ff5555;
+    font-size: 11px;
+    background: #fff;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.sell-category__input:checked + .sell-category__text {
+    background: #ff5555;
+    color: #fff;
+}
+
+.sell-field__price {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sell-field__yen {
+    font-size: 14px;
+}
+
+.sell-submit {
+    width: 100%;
+    background: #ff5555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.sell-submit:hover {
+    background: #ff3f3f;
+}
+
+@media (max-width: 768px) {
+    .sell__inner {
+        width: 92%;
+    }
+}

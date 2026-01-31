@@ -1,0 +1,133 @@
+.purchase {
+    display: flex;
+    gap: 80px;
+    margin: 70px 80px 120px;
+    align-items: flex-start;
+}
+
+.purchase-main {
+    flex: 1;
+    min-width: 520px;
+}
+
+.purchase-item {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.purchase-item__image {
+    width: 180px;
+    height: 180px;
+    background: #d9d9d9;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.purchase-item__name {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.purchase-item__price {
+    font-size: 26px;
+    margin: 0;
+}
+
+.purchase-divider {
+    height: 1px;
+    background: #bfbfbf;
+    margin: 40px 0;
+}
+
+.purchase-section__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.purchase-payment__select select {
+    width: 260px;
+    padding: 6px 10px;
+    border: 1px solid #9b9b9b;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+}
+
+.purchase-shipping__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 420px;
+}
+
+.purchase-shipping__change {
+    color: #1a73e8;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.purchase-shipping__address p {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.purchase-side {
+    width: 360px;
+}
+
+.purchase-summary {
+    border: 1px solid #6f6f6f;
+    background: #fff;
+}
+
+.purchase-summary__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 30px;
+    font-size: 16px;
+    border-bottom: 1px solid #6f6f6f;
+}
+
+.purchase-summary__row:last-child {
+    border-bottom: none;
+}
+
+.purchase-submit {
+    width: 100%;
+    margin-top: 40px;
+    padding: 16px 0;
+    border: none;
+    border-radius: 6px;
+    background: #ff5555;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.purchase-submit:hover {
+    background: #ff3f3f;
+}
+
+@media (max-width: 900px) {
+    .purchase {
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px 20px 80px;
+    }
+
+    .purchase-main {
+        min-width: auto;
+    }
+
+    .purchase-side {
+        width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: #fff;
+}
+
+.header {
+    padding: 12px 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner-search__form {
+    width: 350px;
+    height: 40px;
+}
+
+.header__inner-href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__inner-href__login,
+.header__inner-href__logout {
+    color: #fff; /* 既存のログインと同じ色に */
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__inner-href__mypage {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__inner-href__post {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+}
