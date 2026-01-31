@@ -1,7 +1,7 @@
 # COACHTECH フリマアプリ
 
 ## 環境構築
-
+git clone git@github.com:ds1995-dev/mock-project.git
 docker compose up -d --build
 ```
 
